@@ -18,7 +18,7 @@ An interactive web application for running deep learning-based **prostate segmen
 ##  Features
 
 - Upload medical scans (MRI, CT, TRUS)
-- Choose from dummy models: GAN, YOLOv8, Diffusion
+- Choose from models
 - Perform detection, segmentation, or both
 - Display and download predicted masks
 - Optional ground truth comparison with IoU and Dice metrics
