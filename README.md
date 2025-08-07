@@ -1,65 +1,119 @@
-# Graphical_User_Interface_Medics
-To integate front/back end for clinicians/medical professionals,,,
+# 🩺 Prostate Segmentation & Detection Web Application
 
-
-#  Prostate Segmentation & Detection Tool
-
-An interactive web application for running deep learning-based **prostate segmentation and detection** tasks on medical images using Streamlit.
-
----
-#folders structure
-
-├── app.py                  # Main Streamlit app
-├── requirements.txt        # Python dependencies
-├── saved_predictions/      # Auto-created directory for saved masks
-└── README.md               # This file
-
-
-##  Features
-
-- Upload medical scans (MRI, CT, TRUS)
-- Choose from models
-- Perform detection, segmentation, or both
-- Display and download predicted masks
-- Optional ground truth comparison with IoU and Dice metrics
-- Save masks locally with timestamp
-- Clean, responsive user interface
+This Streamlit-powered application offers an interactive platform for analyzing prostate medical images using detection and segmentation tasks. Users can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (currently placeholder), perform tasks, and visualize results. While this version contains dummy logic for modeling, it is structured for straightforward integration with actual deep learning models.
 
 ---
 
-##  Tech Stack
+## 🚀 Features
 
-- **Frontend & Interface**: Streamlit
-- **Backend Framework**: PyTorch (placeholder models)
-- **Image Processing**: OpenCV & PIL
-- **Metrics**: Scikit-learn (IoU, Dice)
-- **Language**: Python 3.x
+- Upload MRI, CT, or TRUS images in `.png`, `.jpeg`, `.tiff`, or `.nifti` format
+- Select model type (GAN, YOLOv8, Diffusion - placeholders)
+- Choose task: Detection, Segmentation, or Both
+- View overlays for segmentation and bounding boxes
+- Upload ground truth masks to compute evaluation metrics (IoU, Dice)
+- Download predicted segmentation masks
+- Fully interactive web-based experience via Streamlit
 
 ---
 
-##  Installation
+## 📁 Project Structure
 
-1. **Clone the repository**
+```
+.
+├── streamlit_app.py              # Main Streamlit UI script
+├── saved_predictions/           # Folder to save segmentation outputs
+└── README.md
+```
 
+---
 
-##Create virtual environment (optional)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+## 📦 Installation
 
+Install required dependencies using pip:
 
-##install_dependencies
-pip install -r requirements.txt
+```bash
+pip install streamlit torch torchvision pillow opencv-python-headless scikit-learn
+```
 
-to run the app, and generate ip
-streamlit run app.py
+---
 
+## 🧠 How to Run
 
+Launch the Streamlit interface using the following command:
 
-👤 Author
-Syed Ibrar Hussain
-Ph.D. in Mathematics and Computer Science
-Researcher in AI-based Medical Imaging
-(In progress....)
-For scientific contributions, refer to my ResearchGate profile
-git clone https://github.com/yourusername/prostate-segmentation-streamlit.git
-cd prostate-segmentation-streamlit
+```bash
+streamlit run streamlit_app.py
+```
+
+---
+
+## 🔍 Workflow
+
+### Step 1: Upload Files
+- Upload a medical image from your local machine
+- Optionally upload a ground truth mask to compute metrics
+
+### Step 2: Select Parameters
+- Choose a model type (placeholder options provided)
+- Choose your task (Detection / Segmentation / Both)
+- Select the image modality (MRI / CT / TRUS)
+
+### Step 3: Run Task
+- Click "▶️ Run Task" to start the process
+- Outputs are rendered side-by-side (original, prediction)
+- Download the predicted mask (PNG format)
+- View metrics if a ground truth mask is uploaded
+
+---
+
+## 📊 Evaluation Metrics
+
+If a ground truth mask is uploaded, the app calculates:
+
+| Metric | Description |
+|--------|-------------|
+| **IoU** (Jaccard) | Measures overlap between predicted and ground truth mask |
+| **Dice Score** | Measures similarity between predicted and ground truth regions |
+
+---
+
+## 🧪 Output Example
+
+- 🔲 Bounding box visualization for detection
+- 🟥 Overlayed mask output for segmentation
+- 📈 Score summary in metric section
+- 📥 Downloadable mask result
+
+---
+
+## 🧩 Extending the App
+
+To integrate your trained models, update the following placeholder functions:
+
+```python
+def load_model(model_name): ...
+def generate_mask(image, model): ...
+def detect_regions(image, model): ...
+```
+
+These can be customized to include TensorFlow, PyTorch, or ONNX inference pipelines.
+
+---
+
+## ⚠️ Limitations
+
+- Models used are placeholders (i.e., no learning or inference)
+- Segmentation and detection results are simulated for demo purposes
+- NIfTI file format requires additional packages like `nibabel`
+
+---
+
+## 👨‍💻 Author
+
+Developed as a modular prototype for interactive medical image processing applications.
+
+---
+
+## 💡 License
+
+This project is intended for research and educational use. For clinical deployment, consult relevant medical regulations and validation standards.
