@@ -1,6 +1,6 @@
-# 🩺 Prostate Segmentation & Detection Web Application
+# 🩺 Image Segmentation & Detection Web Application
 
-This Streamlit-powered application offers an interactive platform for analyzing prostate medical images using detection and segmentation tasks. Users can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (currently placeholder), perform tasks, and visualize results. While this version contains dummy logic for modeling, it is structured for straightforward integration with actual deep learning models.
+This Streamlit-powered application offers an interactive platform for analyzing medical images using detection and segmentation tasks. Users can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (currently placeholder), perform tasks, and visualize results. While this version contains dummy logic for modeling, it is structured for integration with actual deep learning models,  **In Progress,...**
 
 ---
 
