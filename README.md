@@ -117,3 +117,5 @@ Developed as a modular prototype for interactive medical image processing applic
 ## 💡 License
 
 This project is intended for research and educational use. For clinical deployment, consult relevant medical regulations and validation standards.
+This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
+
