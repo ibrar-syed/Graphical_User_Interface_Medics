@@ -1,4 +1,4 @@
-# 🩺 Image Segmentation & Detection Web Application
+#  Image Segmentation & Detection Web Application
 
 This Streamlit-powered application offers an interactive platform for analyzing medical images using detection and segmentation tasks. 
 
@@ -6,7 +6,7 @@ Can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (cu
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Upload MRI, CT, or TRUS images in `.png`, `.jpeg`, `.tiff`, or `.nifti` format
 - Select model type (GAN, YOLOv8, Diffusion - placeholders)
@@ -18,7 +18,7 @@ Can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (cu
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -29,7 +29,7 @@ Can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (cu
 
 ---
 
-## 📦 Installation
+##  Installation
 
 Install required dependencies using pip:
 
@@ -39,7 +39,7 @@ pip install streamlit torch torchvision pillow opencv-python-headless scikit-lea
 
 ---
 
-## 🧠 How to Run
+##  How to Run
 
 Launch the Streamlit interface using the following command:
 
@@ -49,7 +49,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🔍 Workflow
+##  Workflow
 
 ### Step 1: Upload Files
 - Upload a medical image from your local machine
@@ -61,7 +61,7 @@ streamlit run streamlit_app.py
 - Select the image modality (MRI / CT / TRUS)
 
 ### Step 3: Run Task
-- Click "▶️ Run Task" to start the process
+- Click " Run Task" to start the process
 - Outputs are rendered side-by-side (original, prediction)
 - Download the predicted mask (PNG format)
 - View metrics if a ground truth mask is uploaded
@@ -79,16 +79,16 @@ If a ground truth mask is uploaded, the app calculates:
 
 ---
 
-## 🧪 Output Example
+##  Output Example
 
-- 🔲 Bounding box visualization for detection
-- 🟥 Overlayed mask output for segmentation
-- 📈 Score summary in metric section
-- 📥 Downloadable mask result
+-  Bounding box visualization for detection
+-  Overlayed mask output for segmentation
+-  Score summary in metric section
+-  Downloadable mask result
 
 ---
 
-## 🧩 Extending the App
+##  Extending the App
 
 To integrate your trained models, update the following placeholder functions:
 
@@ -102,7 +102,7 @@ These can be customized to include TensorFlow, PyTorch, or ONNX inference pipeli
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Models used are placeholders (i.e., no learning or inference)
 - Segmentation and detection results are simulated for demo purposes
@@ -110,13 +110,13 @@ These can be customized to include TensorFlow, PyTorch, or ONNX inference pipeli
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Developed as a modular prototype for interactive medical image processing applications.
 
 ---
 
-## 💡 License
+##  License
 
 This project is intended for research and educational use. For clinical deployment, consult relevant medical regulations and validation standards.
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
