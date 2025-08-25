@@ -68,7 +68,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 If a ground truth mask is uploaded, the app calculates:
 
