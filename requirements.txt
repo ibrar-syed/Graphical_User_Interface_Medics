@@ -1,3 +1,4 @@
+#### main requirements to have:
 streamlit
 torch
 torchvision
