@@ -1,4 +1,4 @@
-#  Image Segmentation & Detection Web Application.
+#  Image Segmentation & Detection Web Application....
 
 This Streamlit-powered application offers an interactive platform for analyzing medical images using detection and segmentation tasks. 
 
