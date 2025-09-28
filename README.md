@@ -89,7 +89,7 @@ If a ground truth mask is uploaded, the app calculates:
 -  Score summary in metric section
 -  Downloadable mask result
 
----
+-----------------------------------
 
 ##  Extending the App
 
