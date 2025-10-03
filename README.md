@@ -5,7 +5,7 @@ This Streamlit-powered application offers an interactive platform for analyzing 
 Can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (currently placeholder), perform tasks, and visualize results. While this version contains dummy logic for modeling, it is structured for integration with actual deep learning models,  
 
 ----------------
-**In Progress**
+**In Progress...**
 
 ----------------
 
