@@ -1,4 +1,4 @@
-###add prostate seg+detectuion.
+##add prostate segmentation+detectuion.
 
 # Copyright (C) 2025 ibrar-syed <syed.ibraras@gmail.com>
 # This file is part of the Cancer Detection Project.
