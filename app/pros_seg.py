@@ -40,7 +40,7 @@ def generate_mask(image, model):
     cv2.circle(mask, (width // 2, height // 2), min(height, width) // 4, 255, -1)
     return mask
 
-# ==== Dummy detection function ====
+# ==== Dummy detection function ===
 def detect_regions(image, model):
     height, width = image.shape[:2]
     x1, y1 = width // 3, height // 3
