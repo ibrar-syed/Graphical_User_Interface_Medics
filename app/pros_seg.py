@@ -15,7 +15,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-# utils/metrics.py,...
+# utils/metrics.py,..
 
 import streamlit as st
 import numpy as np
