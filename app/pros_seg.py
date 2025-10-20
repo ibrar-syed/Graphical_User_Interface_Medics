@@ -158,7 +158,7 @@ if run_button:
         col2.image(output_image, caption=" Overlay with Prediction", use_column_width=True)
 
         # Download button for prediction mask
-        st.download_button("📥 Download Predicted Mask", data=Image.fromarray(pred_mask).tobytes(),
+        st.download_button(" Download Predicted Mask", data=Image.fromarray(pred_mask).tobytes(),
                            file_name="predicted_mask.png")
 
         # Save predicted mask to disk
