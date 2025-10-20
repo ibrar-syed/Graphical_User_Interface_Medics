@@ -90,7 +90,7 @@ st.sidebar.markdown("<style> .css-1aumxhk {width: 300px;} </style>", unsafe_allo
 image_uploaded = False  # Track image upload status
 if uploaded_file:
     image_uploaded = True
-    st.subheader("📸 Uploaded Image")
+    st.subheader(" Uploaded Image")
     image = Image.open(uploaded_file).convert("RGB")
     image_np = np.array(image)
     st.image(image_np, caption="Original Image", use_column_width=True)
