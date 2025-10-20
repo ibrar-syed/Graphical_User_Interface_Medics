@@ -103,7 +103,7 @@ st.write("Click the button below to run the selected task.")
 button_color = "danger" if not image_uploaded else "success"
 
 # Use container_width=True to stretch the button across
-run_button = st.button("▶️ Run Task", key="run_task", type="primary", use_container_width=True, disabled=not image_uploaded)
+run_button = st.button(" Run Task", key="run_task", type="primary", use_container_width=True, disabled=not image_uploaded)
 
 # Button Styling
 if not image_uploaded:
