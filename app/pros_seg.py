@@ -68,7 +68,7 @@ def save_predicted_mask(mask, save_dir="saved_predictions"):
     return save_path
 
 # ==== Streamlit UI ====
-st.set_page_config(page_title="🩺 Prostate Segmentation Tool", layout="wide")
+st.set_page_config(page_title=" Prostate Segmentation Tool", layout="wide")
 st.title(" Prostate Segmentation & Detection")
 st.markdown("---")
 
