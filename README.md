@@ -1,4 +1,4 @@
-#  Image Segmentation & Detection Web Application
+# Image Segmentation & Detection Web Application
 
 This Streamlit-powered application offers an interactive platform for analyzing medical images using detection and segmentation tasks. 
 
@@ -9,7 +9,7 @@ Can upload medical images (e.g., MRI, CT, TRUS), select a model architecture (cu
 
 ----------------
 
-##  Features
+## Features
 
 - Upload MRI, CT, or TRUS images in `.png`, `.jpeg`, `.tiff`, or `.nifti` format
 - Select model type (GAN, YOLOv8, Diffusion - placeholders)
