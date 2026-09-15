@@ -1,5 +1,4 @@
-
-## main requirements to have:
+# main requirements to have:
 #----------------------------
 streamlit
 torch
